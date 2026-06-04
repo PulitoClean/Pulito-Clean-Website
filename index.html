@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulito Clean | Landscaping</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pulito-green': '#2E7D32',
+            'leaf-green': '#4CAF50',
+            'clean-black': '#1A1A1A',
+            'light-gray': '#F5F5F5',
+            'mulch-brown': '#6B3E1F',
+            'soil-brown': '#4E2D17'
+          },
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-poppins text-clean-black bg-white">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-6 py-4 border-b">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-full border border-light-gray"></div>
+    <h1 class="font-montserrat text-xl font-bold">
+      <span class="text-pulito-green">Pulito</span>
+      <span class="text-clean-black">Clean</span>
+    </h1>
+  </div>
+  <div class="flex gap-6 text-sm">
+    <a href="index.html" class="hover:text-leaf-green">Home</a>
+    <a href="story.html" class="hover:text-leaf-green">Our Story</a>
+    <a href="contact.html" class="hover:text-leaf-green">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-light-gray py-20 text-center px-6">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="font-montserrat text-4xl md:text-5xl font-bold mb-6">
+      Clean. Reliable. Professional.
+      <span class="text-pulito-green block mt-2">Nature-Focused Landscaping</span>
+    </h2>
+    <p class="text-lg mb-8">
+      We deliver clean, structured outdoor spaces that elevate your property and reflect precision craftsmanship.
+    </p>
+    <a href="contact.html" class="bg-pulito-green text-white px-6 py-3 rounded hover:bg-leaf-green transition">
+      Book a Service
+    </a>
+  </div>
+</section>
+
+<!-- OUR WORK -->
+<section class="py-16 px-6 max-w-6xl mx-auto">
+  <h3 class="font-montserrat text-3xl font-semibold mb-10 text-center">Our Work</h3>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99"
+         class="w-full h-64 object-cover rounded">
+
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+         class="w-full h-64 object-cover rounded">
+
+    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+         class="w-full h-64 object-cover rounded">
+
+    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9"
+         class="w-full h-64 object-cover rounded">
+
+    <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01"
+         class="w-full h-64 object-cover rounded">
+
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+         class="w-full h-64 object-cover rounded">
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light-gray py-6 text-center text-sm">
+  <p>© 2026 Pulito Clean. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
