@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Pulito Clean</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pulito-green': '#2E7D32',
+            'leaf-green': '#4CAF50',
+            'clean-black': '#1A1A1A',
+            'light-gray': '#F5F5F5',
+            'mulch-brown': '#6B3E1F',
+            'soil-brown': '#4E2D17'
+          },
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-poppins text-clean-black bg-white">
+
+<!-- NAV -->
+<nav class="flex justify-between items-center px-6 py-4 border-b">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-full border"></div>
+    <h1 class="font-montserrat text-xl font-bold">
+      <span class="text-pulito-green">Pulito</span>
+      <span>Clean</span>
+    </h1>
+  </div>
+  <div class="flex gap-6 text-sm">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="contact.html" class="text-pulito-green">Contact</a>
+  </div>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section class="grid md:grid-cols-2 min-h-screen">
+
+  <!-- LEFT -->
+  <div class="bg-light-gray p-10 flex flex-col justify-center">
+    <h2 class="font-montserrat text-3xl font-bold mb-6">
+      Get in Touch
+    </h2>
+
+    <p class="mb-4">We’re ready to help transform your property.</p>
+
+    <div class="space-y-3 text-sm">
+      <p><strong>Email:</strong> contact@pulitoclean.com</p>
+      <p><strong>Phone:</strong> (XXX) XXX-XXXX</p>
+      <p><strong>Service Area:</strong> Minneapolis, MN</p>
+    </div>
+
+    <div class="mt-8 border-l-4 border-pulito-green pl-4">
+      <p class="font-montserrat font-semibold">
+        Book a consultation below →
+      </p>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="flex items-center justify-center p-6">
+    <div class="w-full max-w-xl bg-white border rounded p-4">
+
+      <!-- PASTE CALENDLY OR TALLY EMBED CODE HERE -->
+      <iframe class="w-full h-[500px]" src=""></iframe>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light-gray py-6 text-center text-sm">
+  <p>© 2026 Pulito Clean. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
