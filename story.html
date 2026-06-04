@@ -9,83 +9,59 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'pulito-green': '#2E7D32',
-            'leaf-green': '#4CAF50',
-            'clean-black': '#1A1A1A',
-            'light-gray': '#F5F5F5',
-            'mulch-brown': '#6B3E1F',
-            'soil-brown': '#4E2D17'
-          },
-          fontFamily: {
-            montserrat: ['Montserrat', 'sans-serif'],
-            poppins: ['Poppins', 'sans-serif']
-          }
-        }
-      }
-    }
+    tailwind.config = { theme: { extend: { colors: {
+      'pulito-green':'#2E7D32','leaf-green':'#4CAF50','clean-black':'#1A1A1A','light-gray':'#F5F5F5'
+    }, fontFamily:{montserrat:['Montserrat'],poppins:['Poppins']} } } }
   </script>
 </head>
 
-<body class="font-poppins text-clean-black bg-white">
+<body class="font-poppins text-clean-black">
 
-<!-- NAV -->
-<nav class="flex justify-between items-center px-6 py-4 border-b">
-  <div class="flex items-center gap-3">
-    <div class="w-10 h-10 rounded-full border"></div>
-    <h1 class="font-montserrat text-xl font-bold">
-      <span class="text-pulito-green">Pulito</span>
-      <span>Clean</span>
-    </h1>
+<header class="border-b">
+  <div class="max-w-6xl mx-auto flex justify-between px-6 py-4">
+
+    <div class="flex items-center gap-3">
+      <img src="assets/pulito-main-logo.png" class="h-12 w-12 rounded-full object-cover border-2 border-white bg-white shadow-sm">
+      <h1 class="font-montserrat font-bold">
+        <span class="text-pulito-green">Pulito</span>
+        <span>Clean</span>
+      </h1>
+    </div>
+
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html">Home</a>
+      <a href="story.html" class="text-pulito-green">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
   </div>
-  <div class="flex gap-6 text-sm">
-    <a href="index.html">Home</a>
-    <a href="story.html" class="text-pulito-green">Our Story</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+</header>
 
-<!-- CONTENT -->
-<section class="max-w-3xl mx-auto py-20 px-6">
+<section class="bg-light-gray py-12 text-center">
+  <img src="assets/pulito-main-logo.png" class="h-16 w-16 mx-auto rounded-full object-cover border-2 border-white bg-white shadow-sm mb-4">
+  <h2 class="font-montserrat text-3xl font-bold">
+    <span class="text-pulito-green">Pulito</span> Clean
+  </h2>
+</section>
 
-  <h2 class="font-montserrat text-4xl font-bold mb-8 text-center">
+<section class="max-w-3xl mx-auto py-20 px-6 space-y-6 text-lg">
+  <h2 class="font-montserrat text-4xl text-center font-bold mb-6">
     Built on Precision & Simplicity
   </h2>
 
-  <div class="space-y-6 text-lg leading-relaxed">
+  <p>Pulito Clean started with a simple idea — landscaping should feel clean, structured, and intentional.</p>
+  <p>We focus on delivering high-quality outdoor work that emphasizes sharp edges and balance.</p>
+  <p>Our goal is long-term relationships built on reliability and professionalism.</p>
 
-    <p>
-      Pulito Clean started with a simple idea — landscaping should feel clean, structured, and intentional.
-      Not overdone. Not messy. Just done right.
+  <div class="border-l-4 border-pulito-green pl-4">
+    <p class="font-montserrat font-semibold">
+      Clean work. Reliable service. Professional results.
     </p>
-
-    <p>
-      We focus on delivering high-quality outdoor work that emphasizes sharp edges,
-      healthy plant life, and balanced design. Every project reflects discipline,
-      consistency, and attention to detail.
-    </p>
-
-    <p>
-      Our goal is to build long-term relationships through reliability and professionalism,
-      ensuring every client feels confident in the work being done on their property.
-    </p>
-
-    <div class="border-l-4 border-pulito-green pl-4 mt-8">
-      <p class="font-montserrat font-semibold">
-        Clean work. Reliable service. Professional results.
-      </p>
-    </div>
-
   </div>
-
 </section>
 
-<!-- FOOTER -->
 <footer class="bg-light-gray py-6 text-center text-sm">
-  <p>© 2026 Pulito Clean. All rights reserved.</p>
+  © 2026 Pulito Clean
 </footer>
 
 </body>
