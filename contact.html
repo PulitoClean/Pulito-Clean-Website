@@ -5,100 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Pulito Clean</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'pulito-green': '#2E7D32',
-            'leaf-green': '#4CAF50',
-            'clean-black': '#1A1A1A',
-            'light-gray': '#F5F5F5',
-            'mulch-brown': '#6B3E1F',
-            'soil-brown': '#4E2D17'
-          },
-          fontFamily: {
-            montserrat: ['Montserrat', 'sans-serif'],
-            poppins: ['Poppins', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
 </head>
 
-<body class="font-poppins text-clean-black bg-white">
+<body class="font-poppins">
 
-<!-- NAV -->
-<nav class="flex justify-between items-center px-6 py-4 border-b">
-  <div class="flex items-center gap-3">
-    <div class="w-10 h-10 rounded-full border"></div>
-    <h1 class="font-montserrat text-xl font-bold">
-      <span class="text-pulito-green">Pulito</span>
-      <span class="text-clean-black">Clean</span>
-    </h1>
-  </div>
-  <div class="flex gap-6 text-sm">
-    <a href="index.html" class="hover:text-leaf-green">Home</a>
-    <a href="story.html" class="hover:text-leaf-green">Our Story</a>
-    <a href="contact.html" class="text-pulito-green">Contact</a>
-  </div>
-</nav>
+<header class="border-b">
+  <div class="max-w-6xl mx-auto flex justify-between px-6 py-4">
 
-<!-- CONTACT SECTION -->
+    <div class="flex items-center gap-3">
+      <img src="assets/pulito-main-logo.png" class="h-12 w-12 rounded-full object-cover border-2 border-white bg-white shadow-sm">
+      <h1 class="font-montserrat font-bold">
+        <span class="text-pulito-green">Pulito</span> Clean
+      </h1>
+    </div>
+
+    <nav class="flex gap-6 text-sm">
+      <a href="index.html">Home</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html" class="text-pulito-green">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
 <section class="grid md:grid-cols-2 min-h-screen">
 
-  <!-- LEFT -->
-  <div class="bg-light-gray p-10 flex flex-col justify-center">
-    <h2 class="font-montserrat text-3xl font-bold mb-6">
-      Get a Free Quote
-    </h2>
-
-    <p class="mb-4">
-      Book a quick consultation and we’ll walk through your property needs, timeline, and pricing.
-    </p>
-
-    <div class="space-y-3 text-sm">
-      <p><strong>Email:</strong> contact@pulitoclean.com</p>
-      <p><strong>Phone:</strong> (XXX) XXX-XXXX</p>
-      <p><strong>Service Area:</strong> Minneapolis, MN</p>
-    </div>
-
-    <div class="mt-8 border-l-4 border-pulito-green pl-4">
-      <p class="font-montserrat font-semibold">
-        Select a time that works best →
-      </p>
-    </div>
+  <div class="bg-light-gray p-10">
+    <h2 class="font-montserrat text-3xl font-bold mb-6">Get a Free Quote</h2>
+    <p>Email: pulitocleans@outlook.com</p>
+    <p>Phone: (612) 289 4217</p>
   </div>
 
-  <!-- RIGHT -->
-  <div class="flex items-center justify-center p-6">
-    <div class="w-full max-w-2xl bg-white border rounded p-4">
-
-      <!-- Calendly inline widget begin -->
-      <div class="calendly-inline-widget"
-           data-url="https://calendly.com/pulitocleans-caut/30min"
-           style="min-width:320px;height:700px;">
-      </div>
-      <script type="text/javascript"
-              src="https://assets.calendly.com/assets/external/widget.js"
-              async>
-      </script>
-      <!-- Calendly inline widget end -->
-
+  <div class="p-6">
+    <div class="calendly-inline-widget"
+         data-url="https://calendly.com/pulitocleans-caut/30min"
+         style="min-width:320px;height:700px;">
     </div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </div>
 
 </section>
 
-<!-- FOOTER -->
 <footer class="bg-light-gray py-6 text-center text-sm">
-  <p>© 2026 Pulito Clean. All rights reserved.</p>
+  © 2026 Pulito Clean
 </footer>
 
 </body>
