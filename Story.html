@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | Pulito Clean</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pulito-green': '#2E7D32',
+            'leaf-green': '#4CAF50',
+            'clean-black': '#1A1A1A',
+            'light-gray': '#F5F5F5',
+            'mulch-brown': '#6B3E1F',
+            'soil-brown': '#4E2D17'
+          },
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-poppins text-clean-black bg-white">
+
+<!-- NAV -->
+<nav class="flex justify-between items-center px-6 py-4 border-b">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-full border"></div>
+    <h1 class="font-montserrat text-xl font-bold">
+      <span class="text-pulito-green">Pulito</span>
+      <span>Clean</span>
+    </h1>
+  </div>
+  <div class="flex gap-6 text-sm">
+    <a href="index.html">Home</a>
+    <a href="story.html" class="text-pulito-green">Our Story</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<section class="max-w-3xl mx-auto py-20 px-6">
+
+  <h2 class="font-montserrat text-4xl font-bold mb-8 text-center">
+    Built on Precision & Simplicity
+  </h2>
+
+  <div class="space-y-6 text-lg leading-relaxed">
+
+    <p>
+      Pulito Clean started with a simple idea — landscaping should feel clean, structured, and intentional.
+      Not overdone. Not messy. Just done right.
+    </p>
+
+    <p>
+      We focus on delivering high-quality outdoor work that emphasizes sharp edges,
+      healthy plant life, and balanced design. Every project reflects discipline,
+      consistency, and attention to detail.
+    </p>
+
+    <p>
+      Our goal is to build long-term relationships through reliability and professionalism,
+      ensuring every client feels confident in the work being done on their property.
+    </p>
+
+    <div class="border-l-4 border-pulito-green pl-4 mt-8">
+      <p class="font-montserrat font-semibold">
+        Clean work. Reliable service. Professional results.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-light-gray py-6 text-center text-sm">
+  <p>© 2026 Pulito Clean. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
