@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Pulito Clean</title>
 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -38,12 +40,12 @@
     <div class="w-10 h-10 rounded-full border"></div>
     <h1 class="font-montserrat text-xl font-bold">
       <span class="text-pulito-green">Pulito</span>
-      <span>Clean</span>
+      <span class="text-clean-black">Clean</span>
     </h1>
   </div>
   <div class="flex gap-6 text-sm">
-    <a href="index.html">Home</a>
-    <a href="story.html">Our Story</a>
+    <a href="index.html" class="hover:text-leaf-green">Home</a>
+    <a href="story.html" class="hover:text-leaf-green">Our Story</a>
     <a href="contact.html" class="text-pulito-green">Contact</a>
   </div>
 </nav>
@@ -54,10 +56,12 @@
   <!-- LEFT -->
   <div class="bg-light-gray p-10 flex flex-col justify-center">
     <h2 class="font-montserrat text-3xl font-bold mb-6">
-      Get in Touch
+      Get a Free Quote
     </h2>
 
-    <p class="mb-4">We’re ready to help transform your property.</p>
+    <p class="mb-4">
+      Book a quick consultation and we’ll walk through your property needs, timeline, and pricing.
+    </p>
 
     <div class="space-y-3 text-sm">
       <p><strong>Email:</strong> contact@pulitoclean.com</p>
@@ -67,17 +71,25 @@
 
     <div class="mt-8 border-l-4 border-pulito-green pl-4">
       <p class="font-montserrat font-semibold">
-        Book a consultation below →
+        Select a time that works best →
       </p>
     </div>
   </div>
 
   <!-- RIGHT -->
   <div class="flex items-center justify-center p-6">
-    <div class="w-full max-w-xl bg-white border rounded p-4">
+    <div class="w-full max-w-2xl bg-white border rounded p-4">
 
-      <!-- PASTE CALENDLY OR TALLY EMBED CODE HERE -->
-      <iframe class="w-full h-[500px]" src=""></iframe>
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/pulitocleans-caut/30min"
+           style="min-width:320px;height:700px;">
+      </div>
+      <script type="text/javascript"
+              src="https://assets.calendly.com/assets/external/widget.js"
+              async>
+      </script>
+      <!-- Calendly inline widget end -->
 
     </div>
   </div>
