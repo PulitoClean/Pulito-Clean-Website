@@ -5,19 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Story | Pulito Clean</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pulito-green': '#2E7D32',
+            'leaf-green': '#4CAF50',
+            'clean-black': '#1A1A1A',
+            'light-gray': '#F5F5F5'
+          },
+          fontFamily: {
+            montserrat: ['Montserrat'],
+            poppins: ['Poppins']
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body class="font-poppins text-clean-black">
+<body class="font-poppins text-clean-black bg-white">
 
+<!-- HEADER -->
 <header class="border-b">
-  <div class="max-w-6xl mx-auto flex justify-between px-6 py-4">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
     <div class="flex items-center gap-3">
       <img src="assets/pulito-main-logo.png"
            class="h-12 w-12 rounded-full object-cover border-2 border-white bg-white shadow-sm">
-      <h1 class="font-montserrat font-bold">
-        <span class="text-pulito-green">Pulito</span> Clean
+      <h1 class="font-montserrat font-bold text-xl">
+        <span class="text-pulito-green">Pulito</span>
+        <span>Clean</span>
       </h1>
     </div>
 
@@ -29,6 +50,7 @@
   </div>
 </header>
 
+<!-- HERO STRIP -->
 <section class="bg-light-gray py-12 text-center">
   <img src="assets/pulito-main-logo.png"
        class="h-16 w-16 mx-auto rounded-full object-cover border-2 border-white bg-white shadow-sm mb-4">
@@ -37,36 +59,88 @@
   </h2>
 </section>
 
-<!-- STORY -->
-<section class="max-w-4xl mx-auto py-20 px-6 space-y-6 text-lg">
-
-  <h2 class="font-montserrat text-4xl text-center font-bold mb-6">
+<!-- STORY INTRO -->
+<section class="max-w-4xl mx-auto py-16 px-6 text-center">
+  <h2 class="font-montserrat text-4xl font-bold mb-6">
     Built on Precision & Simplicity
   </h2>
 
-  <p>Pulito Clean started with a simple idea — landscaping should feel clean, structured, and intentional.</p>
-  <p>We focus on delivering high-quality outdoor work that emphasizes sharp edges and balance.</p>
-  <p>Our goal is long-term relationships built on reliability and professionalism.</p>
+  <p class="text-lg max-w-2xl mx-auto">
+    Pulito Clean started with a simple idea — landscaping should feel clean, structured, and intentional.
+    Not overdone. Not messy. Just done right.
+  </p>
+</section>
 
-  <!-- OWNER PHOTO PLACEHOLDER -->
-  <div class="mt-12 text-center">
-    <h3 class="font-montserrat text-2xl font-semibold mb-4">Meet the Owners</h3>
-    <div class="h-64 bg-light-gray flex items-center justify-center rounded">
-      <span class="text-sm text-gray-500">Owner Photo Placeholder</span>
+<!-- MEET THE OWNERS -->
+<section class="py-16 px-6 max-w-5xl mx-auto text-center">
+
+  <h2 class="font-montserrat text-4xl font-bold mb-12">
+    Meet the <span class="text-pulito-green">Owners</span>
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-12 items-start">
+
+    <!-- ADAM -->
+    <div>
+      <img src="assets/adam-headshot.png"
+           alt="Adam Senna"
+           class="h-40 w-40 mx-auto rounded-full object-cover border-4 border-pulito-green mb-4">
+
+      <h3 class="font-montserrat text-xl font-bold text-pulito-green">
+        Adam Senna
+      </h3>
+
+      <p class="text-sm mt-2">
+        Mechanical Engineering<br>
+        Virginia Military Institute Graduate<br>
+        D1 Soccer
+      </p>
     </div>
+
+    <!-- GAVIN -->
+    <div>
+      <img src="assets/gavin-headshot.png"
+           alt="Gavin Falk"
+           class="h-40 w-40 mx-auto rounded-full object-cover border-4 border-pulito-green mb-4">
+
+      <h3 class="font-montserrat text-xl font-bold text-pulito-green">
+        Gavin Falk
+      </h3>
+
+      <p class="text-sm mt-2">
+        Business<br>
+        Davenport University Graduate<br>
+        D1 Rugby & Wrestling
+      </p>
+    </div>
+
   </div>
 
-  <!-- CREW PHOTO PLACEHOLDER -->
-  <div class="mt-12 text-center">
-    <h3 class="font-montserrat text-2xl font-semibold mb-4">Our Crew</h3>
-    <div class="h-64 bg-light-gray flex items-center justify-center rounded">
-      <span class="text-sm text-gray-500">Crew Photo Placeholder</span>
+  <!-- CREDENTIAL ROW -->
+  <div class="mt-12 space-y-4 text-sm">
+
+    <div class="flex justify-center items-center gap-2">
+      <span>📍</span>
+      <span class="font-medium">Edina Locals</span>
     </div>
+
+    <div class="flex justify-center items-center gap-2">
+      <span>🎓</span>
+      <span class="font-medium">Recent College Graduates</span>
+    </div>
+
+    <div class="flex justify-center items-center gap-2">
+      <span>📈</span>
+      <span class="font-medium">Pursuing Entrepreneurship</span>
+    </div>
+
   </div>
 
-  <div class="border-l-4 border-pulito-green pl-4 mt-8">
-    <p class="font-montserrat font-semibold">
-      Clean work. Reliable service. Professional results.
+  <!-- STORY TEXT -->
+  <div class="mt-10 max-w-2xl mx-auto text-base leading-relaxed">
+    <p>
+      Two childhood friends turned college experiences into a shared mission to build something of our own.
+      We bring hard work, discipline, and a competitive mindset to everything we do.
     </p>
   </div>
 
