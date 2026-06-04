@@ -13,9 +13,9 @@
 
 <header class="border-b">
   <div class="max-w-6xl mx-auto flex justify-between px-6 py-4">
-
     <div class="flex items-center gap-3">
-      <img src="assets/pulito-main-logo.png" class="h-12 w-12 rounded-full object-cover border-2 border-white bg-white shadow-sm">
+      <img src="assets/pulito-main-logo.png"
+           class="h-12 w-12 rounded-full object-cover border-2 border-white bg-white shadow-sm">
       <h1 class="font-montserrat font-bold">
         <span class="text-pulito-green">Pulito</span> Clean
       </h1>
@@ -26,24 +26,48 @@
       <a href="story.html">Our Story</a>
       <a href="contact.html" class="text-pulito-green">Contact</a>
     </nav>
-
   </div>
 </header>
 
 <section class="grid md:grid-cols-2 min-h-screen">
 
-  <div class="bg-light-gray p-10">
-    <h2 class="font-montserrat text-3xl font-bold mb-6">Get a Free Quote</h2>
-    <p>Email: pulitocleans@outlook.com</p>
-    <p>Phone: (612) 289 4217</p>
+  <!-- LEFT -->
+  <div class="bg-light-gray p-10 flex flex-col justify-center">
+
+    <img src="assets/pulito-main-logo.png"
+         class="h-16 w-16 mb-6 rounded-full object-cover border-2 border-white bg-white shadow-sm">
+
+    <h2 class="font-montserrat text-3xl font-bold mb-4">
+      Schedule Your Free Quote
+    </h2>
+
+    <p class="text-lg mb-6">
+      Book a quick consultation using the calendar on the right. 
+      We’ll review your project, answer questions, and follow up with you as soon as possible.
+    </p>
+
+    <div class="space-y-2 text-sm mb-6">
+      <p>Email: contact@pulitoclean.com</p>
+      <p>Phone: (XXX) XXX-XXXX</p>
+    </div>
+
+    <div class="border-l-4 border-pulito-green pl-4">
+      <p class="font-montserrat font-semibold">
+        Select a time on the right →
+      </p>
+    </div>
+
   </div>
 
-  <div class="p-6">
-    <div class="calendly-inline-widget"
-         data-url="https://calendly.com/pulitocleans-caut/30min"
-         style="min-width:320px;height:700px;">
+  <!-- RIGHT -->
+  <div class="p-6 flex items-center justify-center">
+    <div class="w-full max-w-xl">
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/pulitocleans-caut/30min"
+           style="min-width:320px;height:700px;">
+      </div>
+      <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
     </div>
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </div>
 
 </section>
