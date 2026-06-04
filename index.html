@@ -34,41 +34,70 @@
 
 <body class="font-poppins text-clean-black bg-white">
 
-<!-- NAVBAR -->
-<nav class="flex justify-between items-center px-6 py-4 border-b">
-  <div class="flex items-center gap-3">
-    <div class="w-10 h-10 rounded-full border border-light-gray"></div>
-    <h1 class="font-montserrat text-xl font-bold">
-      <span class="text-pulito-green">Pulito</span>
-      <span class="text-clean-black">Clean</span>
-    </h1>
+<!-- HEADER / NAVBAR -->
+<header class="border-b bg-white">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+
+    <!-- BRAND -->
+    <div class="flex items-center gap-3">
+      <img src="assets/pulito-main-logo.png"
+           alt="Pulito Clean Logo"
+           class="h-12 w-auto object-contain">
+
+      <h1 class="font-montserrat font-bold text-xl leading-none">
+        <span class="text-pulito-green">Pulito</span>
+        <span class="text-clean-black">Clean</span>
+      </h1>
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="flex items-center gap-6 text-sm">
+      <a href="index.html" class="hover:text-leaf-green transition">Home</a>
+      <a href="story.html" class="hover:text-leaf-green transition">Our Story</a>
+      <a href="contact.html" class="hover:text-leaf-green transition">Contact</a>
+    </nav>
+
   </div>
-  <div class="flex gap-6 text-sm">
-    <a href="index.html" class="hover:text-leaf-green">Home</a>
-    <a href="story.html" class="hover:text-leaf-green">Our Story</a>
-    <a href="contact.html" class="hover:text-leaf-green">Contact</a>
-  </div>
-</nav>
+</header>
 
 <!-- HERO -->
-<section class="bg-light-gray py-20 text-center px-6">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="font-montserrat text-4xl md:text-5xl font-bold mb-6">
+<section class="bg-light-gray py-20 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+
+    <!-- Logo Accent -->
+    <div class="flex justify-center mb-6">
+      <img src="assets/pulito-main-logo.png"
+           alt="Pulito Clean Logo"
+           class="h-16 md:h-20 w-auto object-contain">
+    </div>
+
+    <!-- Headline -->
+    <h2 class="font-montserrat text-4xl md:text-5xl font-bold mb-6 leading-tight">
       Clean. Reliable. Professional.
-      <span class="text-pulito-green block mt-2">Nature-Focused Landscaping</span>
+      <span class="block text-pulito-green mt-2">
+        Nature-Focused Landscaping
+      </span>
     </h2>
-    <p class="text-lg mb-8">
-      We deliver clean, structured outdoor spaces that elevate your property and reflect precision craftsmanship.
+
+    <!-- Subtext -->
+    <p class="text-lg max-w-2xl mx-auto mb-8">
+      Structured outdoor spaces designed with precision, balance, and long-term quality in mind.
     </p>
-    <a href="contact.html" class="bg-pulito-green text-white px-6 py-3 rounded hover:bg-leaf-green transition">
-      Book a Service
+
+    <!-- CTA -->
+    <a href="contact.html"
+       class="inline-block bg-pulito-green text-white px-8 py-3 rounded hover:bg-leaf-green transition font-medium">
+      Book a Free Quote
     </a>
+
   </div>
 </section>
 
 <!-- OUR WORK -->
 <section class="py-16 px-6 max-w-6xl mx-auto">
-  <h3 class="font-montserrat text-3xl font-semibold mb-10 text-center">Our Work</h3>
+  <h3 class="font-montserrat text-3xl font-semibold mb-10 text-center">
+    Our Work
+  </h3>
 
   <div class="grid md:grid-cols-3 gap-6">
 
