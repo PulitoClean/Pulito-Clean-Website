@@ -8,6 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <script>
     tailwind.config = {
       theme: {
@@ -26,19 +30,24 @@
       }
     }
   </script>
+
+  <style>
+    .video-overlay {
+      background: rgba(0,0,0,0.45);
+    }
+  </style>
 </head>
 
 <body class="font-poppins text-clean-black bg-white">
 
 <!-- HEADER -->
-<header class="border-b">
+<header class="border-b bg-white/80 backdrop-blur sticky top-0 z-50">
   <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
     <div class="flex items-center gap-3">
       <img src="assets/pulito-main-logo.png"
-           class="h-12 w-12 rounded-full object-cover border-2 border-white bg-white shadow-sm">
+           class="h-12 w-12 rounded-full object-cover border-2 border-white shadow-sm">
       <h1 class="font-montserrat font-bold text-xl">
-        <span class="text-pulito-green">Pulito</span>
-        <span>Clean</span>
+        <span class="text-pulito-green">Pulito</span> Clean
       </h1>
     </div>
 
@@ -50,24 +59,37 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="bg-light-gray py-20 text-center px-6">
-  <div class="max-w-5xl mx-auto">
+<!-- HERO WITH VIDEO -->
+<section class="relative h-screen flex items-center justify-center text-center text-white">
+
+  <!-- VIDEO -->
+  <video autoplay muted loop playsinline
+    class="absolute inset-0 w-full h-full object-cover">
+    <source src="assets/main-video.mp4" type="video/mp4">
+  </video>
+
+  <!-- DARK OVERLAY -->
+  <div class="video-overlay absolute inset-0"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 px-6 max-w-4xl" data-aos="fade-up">
 
     <img src="assets/pulito-main-logo.png"
-         class="h-32 w-32 mx-auto mb-8 rounded-full object-cover border-2 border-white bg-white shadow-sm">
+         class="h-28 w-28 mx-auto mb-6 rounded-full border-2 border-white shadow-lg">
 
-    <h2 class="font-montserrat text-5xl font-bold mb-6">
-      Clean. Reliable. Professional.
-      <span class="block text-pulito-green mt-2">Nature-Focused Landscaping</span>
+    <h2 class="font-montserrat text-5xl md:text-6xl font-bold leading-tight mb-6">
+      Keep It Double Clean <br>
+      <span class="text-leaf-green">with Pulito Clean</span>
     </h2>
 
-    <p class="text-lg mb-8 max-w-2xl mx-auto">
-      We deliver clean, structured outdoor work that enhances your property and keeps it looking sharp year-round.
+    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+      Precision landscaping built for homeowners who care about details.
+      We don’t just clean it — we elevate it. Clean lines, sharp finishes,
+      and a property that stands out every time you pull in.
     </p>
 
     <a href="contact.html"
-       class="bg-pulito-green text-white px-8 py-3 rounded hover:bg-leaf-green transition">
+       class="bg-pulito-green px-8 py-3 rounded hover:bg-leaf-green transition transform hover:scale-105">
       Book a Free Quote
     </a>
 
@@ -75,39 +97,40 @@
 </section>
 
 <!-- SERVICES -->
-<section class="py-16 px-6 max-w-6xl mx-auto">
+<section class="py-20 px-6 max-w-6xl mx-auto">
 
-  <h3 class="font-montserrat text-3xl text-center mb-10">
+  <h3 class="font-montserrat text-3xl text-center mb-12"
+      data-aos="fade-up">
     Our Services
   </h3>
 
-  <div class="grid md:grid-cols-3 gap-8 text-center">
+  <div class="grid md:grid-cols-3 gap-10 text-center">
 
     <!-- Power Washing -->
-    <div>
+    <div data-aos="fade-up" data-aos-delay="100"
+         class="group">
       <img src="assets/power-wash-stone.jpg"
-           alt="Power Washing"
-           class="h-64 w-full object-cover rounded mb-4">
+           class="h-64 w-full object-cover rounded mb-4 transition transform group-hover:scale-105">
       <h4 class="font-montserrat text-xl font-semibold">
         Power Washing
       </h4>
     </div>
 
     <!-- Garden Restoration -->
-    <div>
+    <div data-aos="fade-up" data-aos-delay="200"
+         class="group">
       <img src="assets/tree.jpg"
-           alt="Garden Restoration"
-           class="h-64 w-full object-cover rounded mb-4">
+           class="h-64 w-full object-cover rounded mb-4 transition transform group-hover:scale-105">
       <h4 class="font-montserrat text-xl font-semibold">
         Garden Restoration
       </h4>
     </div>
 
     <!-- Mulching -->
-    <div>
+    <div data-aos="fade-up" data-aos-delay="300"
+         class="group">
       <img src="assets/mulch-stock.jpeg"
-           alt="Mulching"
-           class="h-64 w-full object-cover rounded mb-4">
+           class="h-64 w-full object-cover rounded mb-4 transition transform group-hover:scale-105">
       <h4 class="font-montserrat text-xl font-semibold">
         Mulching
       </h4>
@@ -117,9 +140,30 @@
 
 </section>
 
+<!-- CTA STRIP -->
+<section class="bg-pulito-green text-white py-12 text-center"
+         data-aos="fade-up">
+  <h3 class="text-2xl font-montserrat mb-4">
+    Ready to transform your property?
+  </h3>
+  <a href="contact.html"
+     class="bg-white text-pulito-green px-6 py-3 rounded hover:bg-gray-100 transition">
+    Get Started
+  </a>
+</section>
+
 <footer class="bg-light-gray py-6 text-center text-sm">
   © 2026 Pulito Clean
 </footer>
+
+<!-- AOS SCRIPT -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 
 </body>
 </html>
